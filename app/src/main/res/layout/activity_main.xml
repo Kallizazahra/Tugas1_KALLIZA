@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A3D5EC"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/keju"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:src="@mipmap/ic_keju1_foreground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnroti"
+        app:layout_constraintVertical_bias="0.075">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnroti"
+        android:layout_width="73dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#FFADCE"
+        android:text="Roti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roti" />
+
+    <Button
+        android:id="@+id/btnsusu"
+        android:layout_width="77dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="164dp"
+        android:backgroundTint="#FFADCE"
+        android:text="Susu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/susu" />
+
+    <ImageView
+        android:id="@+id/susu"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:src="@mipmap/ic_susu1_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.339"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/roti"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_roti1_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsusu">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnkeju"
+        android:layout_width="73dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#FFADCE"
+        android:text="Keju"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keju" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukan jumlah produk..."
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#BAB6B6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnkeju"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <Button
+        android:id="@+id/btnenter"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFADCE"
+        android:text="ENTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
